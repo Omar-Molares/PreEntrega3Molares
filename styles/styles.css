@@ -276,8 +276,8 @@ header #check__menu {
     .barra_navegacion #check__menu:checked ~.barra-lista {
         background: rgb(122, 190, 221);
         font-size: 30px;
-        width: 30%;
-        height: 25%;
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
         top: 0px;
