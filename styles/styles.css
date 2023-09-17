@@ -256,6 +256,14 @@ header #check__menu {
 
 /* fin main contacto */
 
+.fs-1 {
+    text-align: center;    
+}
+
+.text-warning  {
+    text-align: center;
+}
+
 @media (max-width: 767px) {
 
 /* barra navegacion movile */
@@ -285,7 +293,7 @@ header #check__menu {
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        transition: all 6s ease-in;
+       
     }
 
     
