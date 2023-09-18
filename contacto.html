@@ -6,11 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/compass.PNG" type="image/PNG">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles/styles.css">
     <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
 </head>
 <body>
-    <header class="header">     
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="./images/compass.PNG" alt="" width="50" height="40" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">Compass</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desplegar
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./sobremi.html">sobre mí</a></li>
+                  <li><a class="dropdown-item" href="#">Experiencia</a></li>
+                  <li><a class="dropdown-item" href="#">gdfgfa-flip-horizontal</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <header class="header">   
+        
+        
         <div>
             <img src="./images/compass.PNG" alt="Mi Logo" class="logo_compass">
         </div> 
@@ -50,8 +81,72 @@
         </button></a> -->
     </header>
 
-    <main class="container-contacto">
-        <section class="contacto">
+    <main class="main-contacto">
+    <div class="container-contacto">
+        <div class="title">Consulta</div>
+        <form class="form-contacto" action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Nombre y Apellido</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Dirección de Correo Electronico</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Telefono</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Nombre y Apellido</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Nombre y Apellido</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <spam class="details">Nombre y Apellido</spam>
+                    <input type="text" placeholder="  Escribir Nombre y Apellido" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="genero" id="dot-1">
+                <input type="radio" name="genero" id="dot-2">
+                <input type="radio" name="genero" id="dot-3">
+                <span class="gender-title">Genero</span>
+                <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="genero">Masculino</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="genero">Femenino</span>
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="genero">Otro</span>
+                </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Enviar Información">
+            </div>
+        </form>
+    </div>
+        <!-- <section class="contacto">
             <article class="formulario">
                 <label for="Nombre y Apellido">Nombre y Apellido</label>
                 <input class="input1" type="name" placeholder="Nombre y Apellido...">
@@ -70,7 +165,7 @@
                 <textarea  class="texto" name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                 <input class="boton-contacto" type="submit" value="Enviar Mensaje">
             </article>
-        </section>
+        </section> -->
 
     </main>
 
@@ -92,6 +187,7 @@
             <p>compass orientación</p>
         </div>
     </footer>
-    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
