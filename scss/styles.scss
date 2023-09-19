@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2? family= Geologica:wght@200 & family= Langosta+Dos & family= Roboto:ital@1 & display=swap');
+
+@import "./partials/reset.scss";
+
+/* el header de todas las paginas */
+
+.header {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    padding: 5px 10%;
+
+    .logo_compass {
+        display: flex;
+        justify-content: flex-start;
+        width: 200px;
+        height: 120px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        
+    }
+}
+
+.header .barra-lista {
+    list-style: none;
+
+     li {
+        color: chocolate;
+        display: inline;
+        padding: 0 20px;
+
+    a {
+        color: black;
+        font-size: 20px solid bold;
+        text-decoration: none;
+        &:hover {
+            color: rgb(211, 148, 96);
+            &:active{
+                color: black;
+            }
+        }
+        }
+    }
+
+}
+
+header label {
+    display: none;
+}
+
+header #check__menu {
+    display: none;
+}
+
+/* empieza main index*/ 
+
+.texto_principal {
+    position: relative;
+
+    .compass-index {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       
+            
+                .imagen-index1 {
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 150px;
+                    border: 1px solid black;
+                }
+    }
+}
+
+.container-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem ;
+    width: 100%;
+
+    .title-index {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.flota-izq {
+    width: 350px;
+    position: absolute;
+    
+    left: 0;
+    z-index: -1;
+    translate: (0, 50%);
+}
+
+.flota-der {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    translate: (20%, 0);
+}
+
+.button-index {
+    background-color: black;
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    
+}
+
+.main-index button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.card-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.card-index img {
+    width: 220px;
+    height: 220px;
+}
+
+/* stard footer*/
+    
+.barra_footer {
+    background: linear-gradient(-135deg, #71b7e6, #645569);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.copy {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* main service */
+
+.service {
+    background-color: rgb(240, 236, 236);
+    text-align: center;
+    justify-content: center;
+
+    .features-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        overflow: scroll;
+
+        p {
+            padding: 2rem 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: scroll;
+        }
+    }
+   
+}
+
+.service img {
+    align-content: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    max-width: 450px;
+    bottom: end;
+}
+
+.title-card {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+/* start main contact */
+
+.main-contacto {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+    .container-contacto {
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+
+        .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 30px;
+                background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            }
+        }
+    }
+}
+
+.container-contacto form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+
+    .details {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-top-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus, user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+
+    .gender-details .category label {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input [type="radio"]{
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+
+    input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        &:hover {
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+    }
+}
+
+/* boostrap */
+
+.fs-1 {
+    text-align: center;    
+}
+
+.text-warning  {
+    text-align: center;
+}
+
+.navbar {
+    display: none;
+}
+
+/* start queries */
+
+@import "./partials/queries.scss";
